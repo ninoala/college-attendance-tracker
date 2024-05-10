@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    width: 100%;
+    padding: 1rem 1rem;
+    background-image: linear-gradient(to right, $dark-blue, $light-blue);
+    box-shadow: 0 1rem 1rem rgba(0,0,0,.5);
+
+    &__logo-box {
+        margin-left: 1rem;
+    }
+
+    &__time-box {
+        margin-right: 3rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-shadow: 0 1rem 1rem rgba(0,0,0,.2);
+        color:  $light-gray;
+    }
+}

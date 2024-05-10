@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /*this defines what 1rem is, 1 rem = 10px in this case; 10px/16px = 62.5%*/
+    font-size: 62.5%;
+
+    @include respond(tab-land) {
+        /*this defines what 1rem is, 1 rem = 9px in this case; 9px/16px = 56.25%*/
+        font-size: 56.25%;
+    }
+
+    @include respond(phone) {
+        /*this defines what 1rem is, 1 rem = 8px in this case; 8px/16px = 50%*/
+        font-size: 50%;
+    }
+}
+
+body {
+    position: relative;
+    background-image: url('../assets/bg.jpg');
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}

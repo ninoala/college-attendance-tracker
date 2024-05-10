@@ -1,0 +1,12 @@
+.section {
+    width: 60%;
+    margin: 7rem auto;
+    padding: 3rem 1rem;
+    border-radius: 3px;
+    box-shadow: $box-shadow;
+    background-color: rgba($dark-blue, .9);
+
+    @include respond(phone) {
+        margin: 2rem auto;
+    }
+}

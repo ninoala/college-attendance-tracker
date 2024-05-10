@@ -1,0 +1,35 @@
+.table {
+    width: 40%;
+    margin: 3rem auto;
+    font-size: 1.7rem;
+    border-collapse: collapse;
+    box-shadow: $box-shadow;
+}
+
+.table tr {
+    display: table-row;
+    gap: 10rem;
+}
+
+.table tr th,
+.table tr td {
+    padding: 1rem 1.5rem;
+    border: 1px solid $black;
+    font-weight: 600;
+    text-align: center;
+    color: $black;
+}
+
+.table tr td {  
+    background-color: $baby-blue;
+}
+
+.table th {
+    background-color: $dark-gray;
+    color: $light-gray !important;
+}
+
+.svg-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+}
